@@ -22,6 +22,8 @@
 		8194D2FA18EB425B00D65B1D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2DE18EB425B00D65B1D /* CoreData.framework */; };
 		8194D30218EB425B00D65B1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8194D30018EB425B00D65B1D /* InfoPlist.strings */; };
 		8194D30418EB425B00D65B1D /* LostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194D30318EB425B00D65B1D /* LostTests.m */; };
+		8194D30E18EB429A00D65B1D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8194D30D18EB429A00D65B1D /* Storyboard.storyboard */; };
+		8194D31118EB43B700D65B1D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8194D31018EB43B700D65B1D /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		8194D2FF18EB425B00D65B1D /* LostTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LostTests-Info.plist"; sourceTree = "<group>"; };
 		8194D30118EB425B00D65B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8194D30318EB425B00D65B1D /* LostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTests.m; sourceTree = "<group>"; };
+		8194D30D18EB429A00D65B1D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		8194D30F18EB43B700D65B1D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8194D31018EB43B700D65B1D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,9 @@
 		8194D2CC18EB425B00D65B1D = {
 			isa = PBXGroup;
 			children = (
+				8194D30D18EB429A00D65B1D /* Storyboard.storyboard */,
+				8194D30F18EB43B700D65B1D /* RootViewController.h */,
+				8194D31018EB43B700D65B1D /* RootViewController.m */,
 				8194D2E018EB425B00D65B1D /* Lost */,
 				8194D2FD18EB425B00D65B1D /* LostTests */,
 				8194D2D718EB425B00D65B1D /* Frameworks */,
@@ -230,6 +238,7 @@
 			files = (
 				8194D2E518EB425B00D65B1D /* InfoPlist.strings in Resources */,
 				8194D2F018EB425B00D65B1D /* Images.xcassets in Resources */,
+				8194D30E18EB429A00D65B1D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +259,7 @@
 			files = (
 				8194D2EB18EB425B00D65B1D /* AppDelegate.m in Sources */,
 				8194D2EE18EB425B00D65B1D /* Lost.xcdatamodeld in Sources */,
+				8194D31118EB43B700D65B1D /* RootViewController.m in Sources */,
 				8194D2E718EB425B00D65B1D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
