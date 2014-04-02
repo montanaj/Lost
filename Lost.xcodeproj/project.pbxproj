@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7076D6DD18EB587B001A20D5 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 7076D6DC18EB587B001A20D5 /* Character.m */; };
 		8194D2D918EB425B00D65B1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2D818EB425B00D65B1D /* Foundation.framework */; };
 		8194D2DB18EB425B00D65B1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2DA18EB425B00D65B1D /* CoreGraphics.framework */; };
 		8194D2DD18EB425B00D65B1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2DC18EB425B00D65B1D /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7076D6DB18EB587B001A20D5 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		7076D6DC18EB587B001A20D5 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		8194D2D518EB425B00D65B1D /* Lost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8194D2D818EB425B00D65B1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8194D2DA18EB425B00D65B1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,9 +58,9 @@
 		8194D2FF18EB425B00D65B1D /* LostTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LostTests-Info.plist"; sourceTree = "<group>"; };
 		8194D30118EB425B00D65B1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8194D30318EB425B00D65B1D /* LostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTests.m; sourceTree = "<group>"; };
-		8194D30D18EB429A00D65B1D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		8194D30F18EB43B700D65B1D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		8194D31018EB43B700D65B1D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8194D30D18EB429A00D65B1D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		8194D30F18EB43B700D65B1D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		8194D31018EB43B700D65B1D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +92,6 @@
 		8194D2CC18EB425B00D65B1D = {
 			isa = PBXGroup;
 			children = (
-				8194D30D18EB429A00D65B1D /* Storyboard.storyboard */,
-				8194D30F18EB43B700D65B1D /* RootViewController.h */,
-				8194D31018EB43B700D65B1D /* RootViewController.m */,
 				8194D2E018EB425B00D65B1D /* Lost */,
 				8194D2FD18EB425B00D65B1D /* LostTests */,
 				8194D2D718EB425B00D65B1D /* Frameworks */,
@@ -123,10 +123,15 @@
 		8194D2E018EB425B00D65B1D /* Lost */ = {
 			isa = PBXGroup;
 			children = (
+				8194D30D18EB429A00D65B1D /* Storyboard.storyboard */,
+				8194D30F18EB43B700D65B1D /* RootViewController.h */,
+				8194D31018EB43B700D65B1D /* RootViewController.m */,
 				8194D2E918EB425B00D65B1D /* AppDelegate.h */,
 				8194D2EA18EB425B00D65B1D /* AppDelegate.m */,
-				8194D2EF18EB425B00D65B1D /* Images.xcassets */,
 				8194D2EC18EB425B00D65B1D /* Lost.xcdatamodeld */,
+				7076D6DB18EB587B001A20D5 /* Character.h */,
+				7076D6DC18EB587B001A20D5 /* Character.m */,
+				8194D2EF18EB425B00D65B1D /* Images.xcassets */,
 				8194D2E118EB425B00D65B1D /* Supporting Files */,
 			);
 			path = Lost;
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8194D2EB18EB425B00D65B1D /* AppDelegate.m in Sources */,
+				7076D6DD18EB587B001A20D5 /* Character.m in Sources */,
 				8194D2EE18EB425B00D65B1D /* Lost.xcdatamodeld in Sources */,
 				8194D31118EB43B700D65B1D /* RootViewController.m in Sources */,
 				8194D2E718EB425B00D65B1D /* main.m in Sources */,
@@ -457,6 +463,7 @@
 				8194D30918EB425B00D65B1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8194D30A18EB425B00D65B1D /* Build configuration list for PBXNativeTarget "LostTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				8194D30C18EB425B00D65B1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

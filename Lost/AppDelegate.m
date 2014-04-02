@@ -3,10 +3,11 @@
 //  Lost
 //
 //  Created by Steve Toosevich on 4/1/14.
-//  Copyright (c) 2014 Steve Toosevich. All rights reserved.
+//  Copyright (c) 2014 Claire Jencks. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UINavigationController* navigationController = (id)self.window.rootViewController;
+    RootViewController* rootViewController = navigationController.viewControllers.firstObject;
+    rootViewController.managedObjectContext = self.managedObjectContext;
+    
     return YES;
 }
 
