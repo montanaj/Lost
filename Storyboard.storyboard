@@ -26,7 +26,7 @@
                                     <items>
                                         <barButtonItem style="plain" id="nWn-yL-3uo">
                                             <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Actor Name" minimumFontSize="17" id="cIP-8O-z2I">
-                                                <rect key="frame" x="16" y="7" width="136" height="30"/>
+                                                <rect key="frame" x="16" y="7" width="102" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -34,7 +34,15 @@
                                         </barButtonItem>
                                         <barButtonItem style="plain" id="6es-HL-08E">
                                             <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger Name" minimumFontSize="17" id="09f-UT-mwy">
-                                                <rect key="frame" x="162" y="7" width="138" height="30"/>
+                                                <rect key="frame" x="128" y="7" width="99" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </barButtonItem>
+                                        <barButtonItem style="plain" id="vvT-4R-erN">
+                                            <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" minimumFontSize="17" id="Ngb-Zs-sgK">
+                                                <rect key="frame" x="237" y="7" width="74" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -43,13 +51,20 @@
                                     </items>
                                 </toolbar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="LostCharactersReuseID" textLabel="dOX-zk-yIx" detailTextLabel="1mt-Ms-jGn" style="IBUITableViewCellStyleSubtitle" id="keY-8V-61M">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="LostCharactersReuseID" textLabel="dOX-zk-yIx" detailTextLabel="1mt-Ms-jGn" style="IBUITableViewCellStyleSubtitle" id="keY-8V-61M" customClass="CustomTableViewCell">
                                         <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="keY-8V-61M" id="Eyv-aU-tFk">
                                             <rect key="frame" x="0.0" y="0.0" width="273" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gender Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3R-ta-iIs">
+                                                    <rect key="frame" x="125" y="11" width="113" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dOX-zk-yIx">
                                                     <rect key="frame" x="15" y="3" width="34" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
@@ -67,6 +82,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="genderLabel" destination="l3R-ta-iIs" id="d73-Mw-Ryt"/>
                                             <segue destination="B2p-V1-rHh" kind="push" trigger="accessoryAction" id="zyj-mj-Q4x"/>
                                         </connections>
                                     </tableViewCell>
@@ -89,6 +105,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="actorNameTextField" destination="cIP-8O-z2I" id="3Gg-kZ-Yje"/>
+                        <outlet property="genderTextField" destination="Ngb-Zs-sgK" id="VP0-gK-4k4"/>
                         <outlet property="myTableView" destination="Lpy-95-ShW" id="L9h-cl-FKT"/>
                         <outlet property="passengerNameTextField" destination="09f-UT-mwy" id="uLT-Kl-Qd4"/>
                     </connections>
@@ -123,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKO-us-swh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="19"/>
+            <point key="canvasLocation" x="1098" y="-32"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nht-ec-pcF">

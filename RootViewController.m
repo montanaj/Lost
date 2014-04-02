@@ -8,13 +8,14 @@
 
 #import "RootViewController.h"
 #import "Character.h"
+#import "CustomTableViewCell.h"
 
 @interface RootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
+
+@property (strong, nonatomic) IBOutlet UITextField *genderTextField;
 @property (strong, nonatomic) IBOutlet UITextField *actorNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passengerNameTextField;
-
-
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic) NSArray* charactersArray;
 
@@ -40,10 +41,13 @@
     Character* character = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:self.managedObjectContext];
     character.passengerName = self.passengerNameTextField.text;
     character.actorName = self.actorNameTextField.text;
-    [self.managedObjectContext save:nil];
+    character.gender = self.genderTextField.text;
     
+    [self.managedObjectContext save:nil];
+    [self.genderTextField resignFirstResponder];
     [self.passengerNameTextField resignFirstResponder];
     [self.actorNameTextField resignFirstResponder];
+    [self.managedObjectContext save:nil];
     [self load];
     
 }
@@ -102,9 +106,11 @@
 {
     
     Character* character = self.charactersArray[indexPath.row];
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"LostCharactersReuseID"];
+    CustomTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"LostCharactersReuseID"];
     cell.textLabel.text = character.actorName;
     cell.detailTextLabel.text = character.passengerName.description;
+    cell.genderLabel.text = character.gender.description;
+    
     return cell;
     
 }

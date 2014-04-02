@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7076D6DD18EB587B001A20D5 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 7076D6DC18EB587B001A20D5 /* Character.m */; };
+		70702F9418EBAF0300118315 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 70702F9318EBAF0300118315 /* Character.m */; };
+		70702F9718EBAFA700118315 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70702F9618EBAFA700118315 /* CustomTableViewCell.m */; };
 		8194D2D918EB425B00D65B1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2D818EB425B00D65B1D /* Foundation.framework */; };
 		8194D2DB18EB425B00D65B1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2DA18EB425B00D65B1D /* CoreGraphics.framework */; };
 		8194D2DD18EB425B00D65B1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194D2DC18EB425B00D65B1D /* UIKit.framework */; };
@@ -38,8 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7076D6DB18EB587B001A20D5 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
-		7076D6DC18EB587B001A20D5 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		70702F9218EBAF0300118315 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		70702F9318EBAF0300118315 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		70702F9518EBAFA700118315 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		70702F9618EBAFA700118315 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		8194D2D518EB425B00D65B1D /* Lost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8194D2D818EB425B00D65B1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8194D2DA18EB425B00D65B1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,9 +131,11 @@
 				8194D31018EB43B700D65B1D /* RootViewController.m */,
 				8194D2E918EB425B00D65B1D /* AppDelegate.h */,
 				8194D2EA18EB425B00D65B1D /* AppDelegate.m */,
+				70702F9218EBAF0300118315 /* Character.h */,
+				70702F9318EBAF0300118315 /* Character.m */,
+				70702F9518EBAFA700118315 /* CustomTableViewCell.h */,
+				70702F9618EBAFA700118315 /* CustomTableViewCell.m */,
 				8194D2EC18EB425B00D65B1D /* Lost.xcdatamodeld */,
-				7076D6DB18EB587B001A20D5 /* Character.h */,
-				7076D6DC18EB587B001A20D5 /* Character.m */,
 				8194D2EF18EB425B00D65B1D /* Images.xcassets */,
 				8194D2E118EB425B00D65B1D /* Supporting Files */,
 			);
@@ -263,7 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8194D2EB18EB425B00D65B1D /* AppDelegate.m in Sources */,
-				7076D6DD18EB587B001A20D5 /* Character.m in Sources */,
+				70702F9418EBAF0300118315 /* Character.m in Sources */,
+				70702F9718EBAFA700118315 /* CustomTableViewCell.m in Sources */,
 				8194D2EE18EB425B00D65B1D /* Lost.xcdatamodeld in Sources */,
 				8194D31118EB43B700D65B1D /* RootViewController.m in Sources */,
 				8194D2E718EB425B00D65B1D /* main.m in Sources */,
